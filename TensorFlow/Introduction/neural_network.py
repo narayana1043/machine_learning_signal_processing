@@ -1,7 +1,7 @@
 import tensorflow as tf
 from tensorflow.examples.tutorials.mnist import input_data
 
-mnist = input_data.read_data_sets("/tmp/data/", one_hot=True)
+mnist = input_data.read_data_sets("/tmp/sentiment_nn/", one_hot=True)
 
 # one hot vector
 '''
@@ -23,7 +23,7 @@ y = tf.placeholder(dtype='float')
 
 def neural_network_model(data):
     """
-    Takes input data and returns output of the output layer
+    Takes input sentiment_nn and returns output of the output layer
     :param data:
     :return:
     """
